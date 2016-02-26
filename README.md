@@ -5,7 +5,7 @@
 
 1. [Laboratorium 1](lab01)
   * [X] [zadanie 1](lab01/zad01.c)
-  * [ ] [zadanie 2](lab01/zad02.c)
+  * [X] [zadanie 2](lab01/zad02.c)
   * [ ] [zadanie 3](lab01/zad03.c)
   * [ ] [zadanie 4](lab01/zad04.c)
   * [ ] [zadanie 5](lab01/zad05.c)
