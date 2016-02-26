@@ -6,5 +6,5 @@
 int main() {
   char z;
   while ((z = getchar()) !=EOF)
-  printf("%c", z)
+  printf("%c", z);
 }
