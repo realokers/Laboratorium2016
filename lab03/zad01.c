@@ -1,44 +1,34 @@
-// Napisać program, który bada poznane typy liczbowe w C; t.zn. ustala
-// ilość bajtów, przeznaczonych na zmienną (operator sizeof),
-// największą i najmniejszą wartość liczby,
-// ,,ziarno'', czyli najmniejszą taką liczbę x, że 1.0+x≠1.0 ,
-// ,,precyzję'', czyli maksymalną liczbę cyfr dziesiętnych po kropce
+#include<stdio.h>
+#include<float.h>
+#include<limits.h>
 
-#include <stdio.h>
-#include <limits.h>
-#include <float.h>
 
 int main()
 {
+  FILE *fp;
+    if ((fp=fopen("zapis.txt", "w"))==NULL)
+	{
+       printf ("blad\n");
+       return;
+    }
 
-  printf ("DOLNA WARTOSC\n\n");
-  printf ("Short: %i\n", SHRT_MIN);
-  printf ("Int: %i\n", INT_MIN);
-  printf ("Long: %li\n", LONG_MIN);
-  printf ("Long long: %lli\n", LLONG_MIN);
 
-  printf ("Float: %e\n", FLT_MIN);
-  printf ("Double: %le\n", DBL_MIN);
-  printf ("Long Double: %le\n\n\n", LDBL_MIN);
 
-  printf ("GORNA WARTOSC\n\n");
-  printf ("Short: %i\n", SHRT_MAX);
-  printf ("Int: %i\n", INT_MAX);
-  printf ("Long: %li\n", LONG_MAX);
-  printf ("Long long: %lli\n", LLONG_MAX);
 
-  printf ("Float: %e\n", FLT_MAX);
-  printf ("Double: %le\n", DBL_MAX);
-  printf ("Long Double: %le\n\n\n", LDBL_MAX);
 
-  printf ("ziarno\n\n");
-  printf ("Float: %e\n", FLT_EPSILON);
-  printf ("Double: %le\n", DBL_EPSILON);
-  printf ("Long Double: %le\n\n\n", LDBL_EPSILON);
+    fprintf(fp,"|typ        |                  min|                  max|    ziarno| prec\t\t\t|we/wy|\n");
+    fprintf(fp,"|-----------------------------------------------------------------------------------------------|-----|\n");
 
-  printf ("precyzja\n\n");
-  printf ("Float: %e\n", FLT_DIG);
-  printf ("Double: %le\n", DBL_DIG);
-  printf ("Long Double: %le\n\n\n", LDBL_DIG);
+    fprintf(fp,"|short      | %20i| %20i|          |     \t\t\t| i   |\n",SHRT_MIN, SHRT_MAX);
+    fprintf(fp,"|int        | %20d| %20d|          |     \t\t\t| d   |\n",INT_MIN, INT_MAX);
+    fprintf(fp,"|long       | %20li| %20li|          |     \t\t\t| li  |\n",LONG_MIN,LONG_MAX);
+    fprintf(fp,"|long long  | %20lli| %20lli|          |     \t\t\t| lli |\n",LONG_LONG_MIN,LONG_LONG_MAX);
+    fprintf(fp,"|float      |              3.4E-38|              3.4E+38|       %d  |   %d \t\t| f   |\n",FLT_EPSILON,FLT_DIG);
+    fprintf(fp,"|double     |             1.7E-308|             1.7E+308|       %d  |  %d \t\t| lf  |\n",DBL_EPSILON,DBL_EPSILON);
+    fprintf(fp,"|long double|             1.7E-308|             1.7E+308|       %d  |  %d \t\t| Lf  |\n",LDBL_EPSILON,LDBL_DIG);
+    fprintf(fp,"|-----------------------------------------------------------------------------------------------------|\n");
+    fclose (fp);
 
+
+return 0;
 }
