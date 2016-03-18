@@ -6,9 +6,12 @@
 
 int main()
 {
-  printf("FLT_MAX na (int)FLT_MAX: '%e' do '%i' \n", FLT_MAX, (int)FLT_MAX);
-  printf("DBM_MAX na (int)DBL_MAX: '%e' do '%i' \n", DBL_MAX, (int)DBL_MAX);
-  printf("LDBL_MAX na (double)LDBL_MAX: '%Le' do '%e' \n", LDBL_MAX, (double)LDBL_MAX);
-  printf("INT_MAX na (float)FLT_MAX: '%i' do '%e' \n", INT_MAX, (float)INT_MAX);
-  printf("LLONG_MAX na (double)LLONG_MAX: '%lli' do '%e' \n", LLONG_MAX, (double)LLONG_MAX);
+  printf("Konwersja liczb\n\n");
+
+  printf("Max_liczba_float w konwersji do int: '%e' do '%i' \n", FLT_MAX, (int)FLT_MAX);
+  printf("Max_liczba_double w konwersji do int: '%e' do '%i' \n", DBL_MAX, (int)DBL_MAX);
+  printf("Max_liczba_long_double w konwersji do double: '%Le' do '%e' \n", LDBL_MAX, (double)LDBL_MAX);
+  printf("Max_liczba_int w konwersji do float: '%i' do '%e' \n", INT_MAX, (float)INT_MAX);
+  printf("Max_liczba_long_long w konwersji do double: '%lli' do '%e' \n", LLONG_MAX, (double)LLONG_MAX);
+  printf("Min_liczba_float w konwersji do short: '%e' do '%i' \n", FLT_MIN, (short)FLT_MIN);
 }
