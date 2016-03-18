@@ -11,13 +11,16 @@
   * [ ] [zadanie 5](lab01/zad05.c)
   * [ ] [zadanie 6](lab01/zad06.c)
 1. [Laboratorium 2](lab02)
-  * [ ] [zadanie 1](lab02/zad01.c)
-  * [ ] [zadanie 2](lab02/zad02.c)
+  * [X] [zadanie 1](lab02/zad01.c)
+  * [X] [zadanie 2](lab02/zad02.c)
   * [ ] [zadanie 3](lab02/zad03.c)
   * [ ] [zadanie 4](lab02/zad04.c)
   * [ ] [zadanie 5](lab02/zad05.c)
   * [ ] [zadanie 6](lab02/zad06.c)
-
+1. [Laboratorium 3](lab03)
+  * [X] [zadanie 1](lab03/zad01.c)
+  * [ ] [zadanie 2](lab03/zad02.c)
+  * [X] [zadanie 3](lab03/zad03.c)
 
   |             |     Dolna wartość    |    Górna wartość    |   "ziarno"    |   "precyzja"  |
   | ----------- | --------------------:| -------------------:| ------------: | ------------: |
