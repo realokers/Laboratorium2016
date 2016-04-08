@@ -25,6 +25,7 @@
   * [X] [zadanie 1](lab04/zad01.c)
 1. [Laboratorium 5](lab05)
   * [X] [zadanie 1](lab05/zad01.c)
+  * [X] [zadanie 2](lab05/zad02.c)
 
   |             |     Dolna wartość    |    Górna wartość    |   "ziarno"    |   "precyzja"  |
   | ----------- | --------------------:| -------------------:| ------------: | ------------: |
