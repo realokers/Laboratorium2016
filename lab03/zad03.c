@@ -7,7 +7,6 @@
 int main()
 {
   printf("Konwersja liczb\n\n");
-
   printf("Max_liczba_float w konwersji do int: '%e' do '%i' \n", FLT_MAX, (int)FLT_MAX);
   printf("Max_liczba_double w konwersji do int: '%e' do '%i' \n", DBL_MAX, (int)DBL_MAX);
   printf("Max_liczba_long_double w konwersji do double: '%Le' do '%e' \n", LDBL_MAX, (double)LDBL_MAX);

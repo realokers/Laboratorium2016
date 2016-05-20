@@ -1,16 +1,16 @@
-//Tutaj jest niepe³ny program w C, zawieraj¹cy prototypy funkcji obs³uguj¹cych podstawowe dzia³ania na listach. Nale¿y dopisaæ cia³a tych funkcji tak, ¿eby
+//Tutaj jest niepeï¿½ny program w C, zawierajï¿½cy prototypy funkcji obsï¿½ugujï¿½cych podstawowe dziaï¿½ania na listach. Naleï¿½y dopisaï¿½ ciaï¿½a tych funkcji tak, ï¿½eby
 
-//    te funkcje dzia³a³y zgodnie z podanymi komentarzami,
-//    prawid³owo dzia³a³a funkcja odwroc odwracaj¹ca listê,
-//    program g³ówny drukowa³ ci¹g 3 s³ów:
+//    te funkcje dziaï¿½aï¿½y zgodnie z podanymi komentarzami,
+//    prawidï¿½owo dziaï¿½aï¿½a funkcja odwroc odwracajï¿½ca listï¿½,
+//    program gï¿½ï¿½wny drukowaï¿½ ciï¿½g 3 sï¿½ï¿½w:
 
 //      ghi
 //      def
 //     abc
 
-//Ani w definicji typu lista, ani w ciele funkcji odwroc, ani w czêœci main programu
-//niczego nie zmieniaæ -- tylko wype³niæ cia³a tych funkcji,których jedyn¹ zawartoœci¹ jest komentarz.
-//Definiowane funkcje (z wyj¹tkiem funkcji druk) nie mog¹ niczego pisaæ ani czytaæ.
+//Ani w definicji typu lista, ani w ciele funkcji odwroc, ani w czï¿½ï¿½ci main programu
+//niczego nie zmieniaï¿½ -- tylko wypeï¿½niï¿½ ciaï¿½a tych funkcji,ktï¿½rych jedynï¿½ zawartoï¿½ciï¿½ jest komentarz.
+//Definiowane funkcje (z wyjï¿½tkiem funkcji druk) nie mogï¿½ niczego pisaï¿½ ani czytaï¿½.
 //wbzyl.inf.ug.edu.pl/rails2/jp/list_adt/14
 //wbzyl.inf.ug.edu.pl/c
 
@@ -85,5 +85,4 @@ int main()
   lista lis=NULL;
   lis=dolacz("abc", dolacz("def", dolacz("ghi", lis)));
   druk(odwroc(lis));
-  return 0;
 }

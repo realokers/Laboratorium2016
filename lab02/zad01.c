@@ -27,5 +27,4 @@ int main()
     if(c!='\n') dec_bin(c);
     c=getchar();
   }
-  return 0;
 }

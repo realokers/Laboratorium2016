@@ -13,5 +13,4 @@ int main(void) {
   printf("%d\n", target);
   /* ******** */
 
-  return 0;
 }
